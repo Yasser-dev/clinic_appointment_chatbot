@@ -1,0 +1,115 @@
+{
+  "id": "c2f2b920-60a4-49b7-b8c2-3bc20cea86f9",
+  "name": "Get Confirmation",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "waiting_confirm"
+  ],
+  "contexts": [
+    "waiting_confirm"
+  ],
+  "endInteraction": true,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "confirmed",
+          "dataType": "@Boolean",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "I didn't quite understand please reply with \"Yes\" or \"No\""
+          ],
+          "value": "$confirmed",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "No thanks",
+          "userDefined": false,
+          "alias": "confirmed",
+          "meta": "@Boolean"
+        }
+      ],
+      "count": 0,
+      "id": "b58812d1-0612-4667-90e4-911d147ff9c6",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Yes please",
+          "userDefined": false,
+          "alias": "confirmed",
+          "meta": "@Boolean"
+        }
+      ],
+      "count": 0,
+      "id": "2c5aaf28-d315-4074-a6d4-70066a82e68d",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "No",
+          "userDefined": false,
+          "alias": "confirmed",
+          "meta": "@Boolean"
+        }
+      ],
+      "count": 0,
+      "id": "2c5fe3ee-cce7-456d-ade1-b5b64ad05d28",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Yes",
+          "userDefined": false,
+          "alias": "confirmed",
+          "meta": "@Boolean"
+        }
+      ],
+      "count": 0,
+      "id": "bcb8bfb8-938a-4eda-8700-dc426798a5ce",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": true
+}

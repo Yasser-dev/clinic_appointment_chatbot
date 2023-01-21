@@ -1,0 +1,31 @@
+{
+  "isRegexp": false,
+  "isEnum": false,
+  "allowFuzzyExtraction": false,
+  "name": "Boolean",
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "true",
+      "synonyms": [
+        "true",
+        "yes",
+        "yes please",
+        "agree",
+        "sure",
+        "absolutely"
+      ]
+    },
+    {
+      "value": "false",
+      "synonyms": [
+        "false",
+        "no",
+        "no thanks",
+        "no, thanks"
+      ]
+    }
+  ],
+  "id": "ee39b888-de08-473e-9a6a-d4f7b5bb236d",
+  "isOverridable": false
+}

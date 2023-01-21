@@ -1,0 +1,371 @@
+{
+  "id": "8c3538a4-156f-4daa-9ed4-10167adb7fe6",
+  "name": "Get Appointment Date",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [
+    "waiting_appointment_details"
+  ],
+  "contexts": [
+    "waiting_appointment_details"
+  ],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "book",
+      "affectedContexts": [
+        {
+          "name": "waiting_contact",
+          "lifespan": 20
+        }
+      ],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "date",
+          "dataType": "@sys.date",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "Sure, please provide me with the date and I'll check if it's available."
+          ],
+          "value": "$date",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "time",
+          "dataType": "@sys.time",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "What time do you want to schedule your appointment at?"
+          ],
+          "value": "$time",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "Thanks, Please provide you name, number and email address."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "16th of january",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "12:30 pm",
+          "userDefined": false,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "4a219e4e-3770-40b3-84ee-5dac68c4b267",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "February 12",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "7:30 pm",
+          "userDefined": true,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "50fee9bc-7cbb-4633-9922-6152e91c62a8",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Tomorrow",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "10:00 AM",
+          "userDefined": false,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "0f97289d-6fef-4eb6-b9bb-9e2eacde193f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Today",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "13:40",
+          "userDefined": false,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "8871e29f-880b-4c1e-8cd0-f6de559cbd8b",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Next Tuesday",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "1 PM",
+          "userDefined": false,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "7f5953cf-dc73-4ae2-8124-f94cd031676f",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Book",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "ac4d003d-7ad2-4432-bddb-020a2297cb29",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Appointment",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "7aa2ccab-143f-4e1c-a937-c780dda29bc5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Visit",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "4de42499-5ff2-43ec-b8c3-89b93b8fb262",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Book an appointment",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "cbaa6238-81ac-4a34-ae1c-1424a8b4b979",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Schedule a visit",
+          "userDefined": false
+        }
+      ],
+      "count": 0,
+      "id": "e6b65f34-2997-47af-bcdc-0d62a0fce5a4",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Schedule a visit ",
+          "userDefined": false
+        },
+        {
+          "text": "this afternoon",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": "5756a180-f245-41f2-ac9e-b9d6883706cc",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Set an appointment ",
+          "userDefined": false
+        },
+        {
+          "text": "today",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "8:10 pm",
+          "userDefined": false,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "39101b95-4e3b-45d7-b659-09556090d092",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Book an appointment on ",
+          "userDefined": false
+        },
+        {
+          "text": "13th of September 2023",
+          "userDefined": true,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": "0ff365ca-e5bf-4387-b22d-f4dfe53ebbdf",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Schedule an appointment ",
+          "userDefined": false
+        },
+        {
+          "text": "this friday",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        }
+      ],
+      "count": 0,
+      "id": "80001d2e-a3d6-4db3-8e4a-758294fc1192",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "Book a visit ",
+          "userDefined": false
+        },
+        {
+          "text": "next Wednesday",
+          "userDefined": false,
+          "alias": "date",
+          "meta": "@sys.date"
+        },
+        {
+          "text": " at ",
+          "userDefined": false
+        },
+        {
+          "text": "12:00 pm",
+          "userDefined": true,
+          "alias": "time",
+          "meta": "@sys.time"
+        }
+      ],
+      "count": 0,
+      "id": "580b9479-d741-4f4f-88da-556f7ac4e37d",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
